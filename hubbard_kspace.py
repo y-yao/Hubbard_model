@@ -33,7 +33,7 @@ with open('FCIDUMP', 'w') as dump_file:
         for q_orb in range(1, p_orb+1):
             for r_orb in orb_indices:
                 for s_orb in range(1, r_orb+1):
-                    if (p_orb*(p_orb-1)+q_orb < (r_orb*(r_orb-1)+s_orb)):
+                    if (p_orb*(p_orb-1)/2+q_orb < (r_orb*(r_orb-1)/2+s_orb)):
                         continue
 #    for p_orb in orb_indices:
 #        for q_orb in orb_indices:
